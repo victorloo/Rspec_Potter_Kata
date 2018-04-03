@@ -10,10 +10,8 @@ class Cart
     total = 0
     
     while @ordered_items.size > 0
-      if @ordered_items.size == 5
-        total = total + 5 * PRICE * 0.75
-      elsif @ordered_items.size == 4
-        total = total + 4 *PRICE * 0.8
+      if  @ordered_items.size == 4
+        total = total + 4 *PRICE * 0.85
       elsif @ordered_items.size == 3
         total = total + 3 * PRICE * 0.9
       elsif @ordered_items.size == 2
